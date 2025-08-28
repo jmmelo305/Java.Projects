@@ -12,7 +12,7 @@ Jose Melo
 //Imports
 
 import java.util.Scanner;
-public class QuadraticForm {
+public class MeloQuadraticForm {
     public static void main (String [] args){
         
         
