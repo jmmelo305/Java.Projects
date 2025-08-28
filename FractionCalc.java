@@ -7,7 +7,7 @@
  
 //Imports Scanner
 import java.util.Scanner;
-public class FractionCalculator {
+public class FractionCalc {
     public static void main(String [] args){
     
     //Ask for numerator and denominator inputs
