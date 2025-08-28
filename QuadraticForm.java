@@ -1,12 +1,11 @@
 /*
+Quadratic Formula calculator
+
+A program that one inputs "a" "b" and "c" numbers and calculates the roots of the quadratic equation with inputted numbers
+
+8/26/2025
 
 Jose Melo
-
-August 26, 2025
-
-Programming Project 1
-
-CSC 151
 
 */
 
