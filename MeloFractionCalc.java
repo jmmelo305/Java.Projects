@@ -1,53 +1,40 @@
 /*
-Quadratic Formula calculator
-
-A program that one inputs "a" "b" and "c" numbers and calculates the roots of the quadratic equation with inputted numbers
-
-8/26/2025
-
-Jose Melo
-
-*/
-
-//Imports
-
+ * Proper Fractions, Improper Fractions, and Mixed Fractions
+ * A program that one inputs a numerator and denominator and determines whether it's a proper or improper fraction, if is improper than it converts into a mixed fraction
+ * 8/27/2025
+ * Jose Melo
+ */
+ 
+//Imports Scanner
 import java.util.Scanner;
-public class MeloQuadraticForm {
-    public static void main (String [] args){
-        
-        
-        //Asking for input and assigning it to variables
-        Scanner input = new Scanner(System.in);
-        System.out.println ("Enter a, b, c");
-        double a = input.nextDouble();
-        double b = input.nextDouble();
-        double c = input.nextDouble();
-        
-        
-        //Square root command, found on w3schools, cleaned up
-	//double square_root = Math.pow((Math.pow(b,2) - 4 * a * c),0.5);
-        double square_root = Math.sqrt(Math.pow(b,2) - (4 * a * c));
-        
-        
-        //Creating both equations.
-        double r1 = ((-b + square_root) / (2 * a));
-        double r2 = ((-b - square_root) / (2 * a));
-        
-        
-        //Formatting Decimals found on w3schools.
-        String result1 = String.format ("%.6f",r1);
-        String result2 = String.format ("%.6f",r2);
-         
+public class MeloFractionCalc {
+    public static void main(String [] args){
+    
+    //Ask for numerator and denominator inputs
+      Scanner input = new Scanner (System.in);
+      System.out.println("Enter a numerator and denominator");
 
-        //If, else if, else statements to determine if square_root is positive, negative, or 0. Print statement at each
-        if (square_root > 0.0){
-            System.out.println("The roots are " + result1 + " and " + result2);
-        }
-        else if (square_root == 0){
-            System.out.println("The root is " + result1);
-        }    
-        else{
-            System.out.println("The equation has no real roots");
-        }  
+    //Processes inputs and calculates the fraction and the remainder
+      int numerator = input.nextInt();
+      int denominator = input.nextInt();
+      int calculation = (numerator / denominator);
+      int remainder = (numerator % denominator);
+     
+     //If remainder equals numerator then fraction is proper
+      if (remainder == numerator){
+          System.out.println(numerator + " / " + denominator + " is a proper fraction");
+      }
+      
+     //If remainder is smaller than the numerator but bigger than 0 it is improper that can be converted to a mixed fraction
+      else if (remainder <= numerator && remainder > 0){
+        String mixedFraction = (remainder + " / " + denominator);
+        System.out.println(numerator + " / " + denominator + " is an improper fraction and it's mixed fraction is: " + calculation + " + " + mixedFraction);
+      }
+      
+      //If remainder is equal to 0 then the fraction is improper and can be reduced to a whole number
+        else if (remainder == 0){
+            System.out.println(numerator + " / " + denominator + " is an improper fraction and it can be reduced to " + calculation);
+        }   
     }
 }
+
