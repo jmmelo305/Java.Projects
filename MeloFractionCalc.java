@@ -1,16 +1,13 @@
 /*
  * Proper Fractions, Improper Fractions, and Mixed Fractions
- 
  * A program that one inputs a numerator and denominator and determines whether it's a proper or improper fraction, if is improper than it converts into a mixed fraction
- 
  * 8/27/2025
- 
  * Jose Melo
  */
  
 //Imports Scanner
 import java.util.Scanner;
-public class FractionCalc {
+public class MeloFractionCalc {
     public static void main(String [] args){
     
     //Ask for numerator and denominator inputs
