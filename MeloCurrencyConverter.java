@@ -1,3 +1,12 @@
+/*
+
+Made it to practice n learn to code different statements or assignments or wtv
+
+Jose Melo
+
+8/28/25
+*/
+
 import java.util.Collections;
 import java.util.LinkedList;
 public class MeloCurrencyConverter{
@@ -18,3 +27,4 @@ public class MeloCurrencyConverter{
         System.out.println("Random Generated Num is: " + randNum);
     }   
 }
+
