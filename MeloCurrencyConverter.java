@@ -1,22 +1,20 @@
+import java.util.Collections;
 import java.util.LinkedList;
-import java.util.Scanner;
 public class MeloCurrencyConverter{
     public static void main(String[] args){
-        System.out.println("Welcome to the Currency Converter!");
-        System.out.println(" ");
-        System.out.println("Please enter a Country");
-
         LinkedList<String> countries = new LinkedList<>();
         countries.add("Colombia");
         countries.add("Brazil");
         countries.add("Italy");
         countries.add("Japan");
         countries.add("South Korea");
+        Collections.sort(countries);
         System.out.println(countries);
 
-        Scanner countryScanner = new Scanner(System.in);
-        String country = countryScanner.nextLine();
-        System.out.println("Country selected: " + country);
+        int randNum = (int)(Math.random()*5);
 
+        String country1 = countries.get(randNum);
+        System.out.println(country1);
+        System.out.println("Random Generated Num is: " + randNum);
     }   
 }
