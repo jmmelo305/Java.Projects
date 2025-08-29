@@ -1,5 +1,14 @@
+/*
+
+Helping Jess out with an assignment for Mccuen, I made my own code
+
+Jose Melo
+
+8/28/2025
+*/
+
 import java.util.Scanner;
-public class MeloAverageTestCalcTestCalc{
+public class MeloAverageTestCalc{
     public static void main(String [] args){
         
         Scanner input = new Scanner(System.in);
@@ -36,4 +45,5 @@ public class MeloAverageTestCalcTestCalc{
             System.out.println("Your letter grade is: " + letterGrade);
         }
     }
+
 }
