@@ -15,5 +15,5 @@
 ##### Originially Created for Assignments in Wake Tech Community College Class CSC-151 .
 ##### Now Used for any project created in Java Programming Language
 
-## Websties I Recommend.
+## Websties I Find Useful.
 ##### ...
