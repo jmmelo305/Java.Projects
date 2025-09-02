@@ -7,7 +7,8 @@
 
 ## About Me
 ##### Colombian Native, Grew up in United States
-##### Fluent in English and Spanish, Learning Portuguese, Italian, Korean . . . .
+##### Fluent in English and Spanish
+##### Learning Portuguese, Italian, Korean (More To Come)
 ##### Interests - Sports (Soccer, Golf, Tennis) - Music (. . . .) - Activites (. . . .) - . . . .
 
 ## This Repository
