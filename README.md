@@ -13,7 +13,7 @@
 
 ## This Repository
 ##### Originally Created to store Assignments from Wake Tech Community College Class CSC-151 .
-##### Currently Used for any project created in Java Programming Language
+##### Currently used for any project created in Java Programming Language
 
 ## Websties I Find Useful.
 ##### ...
