@@ -1,2 +1,2 @@
 # Java.Projects
-Projects that I created using Java 
+Programs created in Java
