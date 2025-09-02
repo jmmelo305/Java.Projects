@@ -3,7 +3,7 @@
 ## Contact Information
 ##### Jose Melo
 ##### jmmelo.edu@gmail.com / jmmelo@my.waketech.edu / jmmelo@students.wcpss.net
-##### Senior - Computer Programming Program at Wake Early College of Information and Biotechnology.
+##### Senior - Computer Programming at Wake Early College of Information and Biotechnology.
 
 ## About Me
 ##### Colombian Native, Grew up in United States
