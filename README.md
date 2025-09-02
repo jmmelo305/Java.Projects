@@ -12,8 +12,8 @@
 ##### Interests - Sports (Soccer, Golf, Tennis) - Music (. . . .) - Activites (. . . .) - . . . .
 
 ## This Repository
-##### Originially Created for Assignments in Wake Tech Community College Class CSC-151 .
-##### Now Used for any project created in Java Programming Language
+##### Created for Assignments in Wake Tech Community College Class CSC-151 .
+##### Currently Used for any project created in Java Programming Language
 
 ## Websties I Find Useful.
 ##### ...
