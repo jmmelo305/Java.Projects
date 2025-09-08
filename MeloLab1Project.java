@@ -91,54 +91,46 @@ public class MeloLab1Project {
 
          if (age3 > 0 && age3 <= 5){
             ticketType = "Free";
-            ticketPrice = 0;
+            ticketPrice3 = 0;
         }
         
         else if (age3 >= 6 && age3 <= 12){
             ticketType = "Child ticket";
-            ticketPrice = 5;
+            ticketPrice3 = 5;
         }
 
         else if (age3 >= 13 && age3 <= 17){
             ticketType = "Teen Ticket";
-            ticketPrice = 8;
+            ticketPrice3 = 8;
         }
         
         else if (age3 >=18 && age3 <= 59){
             ticketType = "Adult Ticket";
-            ticketPrice = 12;
+            ticketPrice3 = 12;
         }
         
         else if (age3 >= 60){
             ticketType = "Senior Ticket";
-            ticketPrice = 6;
+            ticketPrice3 = 6;
         }
-
-        
-
-
-        System.out.println("This is the ticket type for customer 1 " + ticketType + " and the ticket price $" + ticketPrice);
-        System.out.println(" ");
-
-        System.out.println("This is the ticket type for customer 2 " + ticketType2 + " and the ticket price $" + ticketPrice2);
-        System.out.println(" ");
-
-        System.out.println("This is the ticket type for customer 3 " + ticketType + " and the ticket price $" + ticketPrice);
-        System.out.println(" ");
 
         // Add a 5% processing fee to the subtotal to get the total charge
 
         //Print out results ADD THE TICKET PRICE PER PERSON
+        System.out.println(" ");
         System.out.println("Customer 1 Name: " + name1);
         System.out.println("Customer 1 Age " + age1);
+        System.out.println("Customer 1 Ticket Price $" + ticketPrice);
         System.out.println(" ");
     
         System.out.println("Customer 2 Name: " + name2);
         System.out.println("Customer 2 Age " + age2);
+        System.out.println("Customer 2 Ticket Price $" + ticketPrice2);
         System.out.println(" ");
 
         System.out.println("Customer 3 Name: " + name3);
         System.out.println("Customer 3 Age " + age3);
+        System.out.println("Customer 3 Ticket Price $" + ticketPrice3);
         System.out.println(" ");
 
 
