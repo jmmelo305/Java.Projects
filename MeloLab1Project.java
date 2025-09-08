@@ -114,7 +114,7 @@ public class MeloLab1Project {
         subtotalPrice = ticketPrice + ticketPrice2 + ticketPrice3;
         totalPrice = (subtotalPrice * processingFee) + subtotalPrice;
 
-        //Print out results ADD THE TICKET PRICE PER PERSON
+        //Print out results per customer
         System.out.println(" ");
         System.out.println("Customer 1 Name: " + name1);
         System.out.println("Customer 1 Age " + age1);
