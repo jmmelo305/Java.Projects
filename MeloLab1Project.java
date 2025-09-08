@@ -1,21 +1,30 @@
-import java.util.Scanner;
+/*
+ * Program made to calculate ticcket pricing for 3 customers based on their ages and adds a processing fee to it's subtotal cost.
+ * Jose Melo
+ * 9/8/25
+ * CSC 120
+ */
 
+//Importing Scanner to be able to ask for inputs.
+import java.util.Scanner;
 public class MeloLab1Project {
     public static void main (String [] args){
         
+        //Declaring variables
         String name1;
         String name2;
         String name3;
-        String ticketType = " ";
-        String ticketType2 = " ";
-        String ticketType3 = " ";
         int age1;
         int age2;
         int age3;
         int ticketPrice = 0;
         int ticketPrice2 = 0;
         int ticketPrice3 = 0;
+        double processingFee = 0.05;
+        double subtotalPrice = 0.0;
+        double totalPrice = 0.0;
 
+        //Requests for inputs and organizes into their corresponding variables.
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter Last Name of Customer 1: ");
@@ -37,84 +46,73 @@ public class MeloLab1Project {
         age3 = input.nextInt();
         
 
-        //Calculate ticket price based off age.
+        //Calculates ticket price based off age for customer 1
         if (age1 > 0 && age1 <= 5){
-            ticketType = "Free";
             ticketPrice = 0;
         }
         
         else if (age1 >= 6 && age1 <= 12){
-            ticketType = "Child ticket";
             ticketPrice = 5;
         }
 
         else if (age1 >= 13 && age1 <= 17){
-            ticketType = "Teen Ticket";
             ticketPrice = 8;
         }
         
         else if (age1 >=18 && age1 <= 59){
-            ticketType = "Adult Ticket";
             ticketPrice = 12;
         }
         
         else if (age1 >= 60){
-            ticketType = "Senior Ticket";
             ticketPrice = 6;
         }
 
+        //Calculates ticket price based off age for customer 2
          if (age2 > 0 && age2 <= 5){
-            ticketType2 = "Free";
             ticketPrice2 = 0;
         }
         
         else if (age2 >= 6 && age2 <= 12){
-            ticketType2 = "Child ticket";
             ticketPrice2 = 5;
         }
 
         else if (age2 >= 13 && age2 <= 17){
-            ticketType2 = "Teen Ticket";
             ticketPrice2 = 8;
         }
         
         else if (age2 >=18 && age2 <= 59){
-            ticketType2 = "Adult Ticket";
             ticketPrice2 = 12;
         }
         
         else if (age2 >= 60){
-            ticketType2 = "Senior Ticket";
             ticketPrice2 = 6;
         }
 
-
+        //Calculates ticket price based off age for customer 3
          if (age3 > 0 && age3 <= 5){
-            ticketType = "Free";
             ticketPrice3 = 0;
         }
         
         else if (age3 >= 6 && age3 <= 12){
-            ticketType = "Child ticket";
             ticketPrice3 = 5;
         }
 
         else if (age3 >= 13 && age3 <= 17){
-            ticketType = "Teen Ticket";
             ticketPrice3 = 8;
         }
         
         else if (age3 >=18 && age3 <= 59){
-            ticketType = "Adult Ticket";
             ticketPrice3 = 12;
         }
         
         else if (age3 >= 60){
-            ticketType = "Senior Ticket";
             ticketPrice3 = 6;
         }
 
-        // Add a 5% processing fee to the subtotal to get the total charge
+        //Calculates subtotal Price and then adds a processing fee of 5% to it and calculates the total price.
+
+        subtotalPrice = ticketPrice + ticketPrice2 + ticketPrice3;
+        totalPrice = (subtotalPrice * processingFee) + subtotalPrice;
 
         //Print out results ADD THE TICKET PRICE PER PERSON
         System.out.println(" ");
@@ -133,9 +131,11 @@ public class MeloLab1Project {
         System.out.println("Customer 3 Ticket Price $" + ticketPrice3);
         System.out.println(" ");
 
-
-        //Final Calculations, add and print subtotal, print total charge after the 5% processing fee.
-
+        //Prints final calculations, including subtotal price and total price with processing fee included.
+        System.out.println("__________ Calculations __________");
+        System.out.println("Subtotal: $" + subtotalPrice);
+        System.out.println("Total Charge: $" + totalPrice);
+        System.out.println(" ");
 
 
     }
