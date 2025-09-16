@@ -1,5 +1,14 @@
 //Remember to save file first and then commit for it to upload properly.
 
+/*
+ * Programmer: Jose Melo
+ * Program: Method Practice
+ * Purpose: A program that prompts the user to enter annual interest rate, number of years, and loan amount, and displays the monthly payment and total payment.
+ * Date: 09-16-2025
+ */
+
+
+
 import java.util.Scanner;
 public class MeloMethodsPractice{
 
