@@ -1,3 +1,5 @@
+//Remember to save file first and then commit for it to upload properly.
+
 import java.util.Scanner;
 public class MeloMethodsPractice{
 
