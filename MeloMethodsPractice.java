@@ -1,5 +1,3 @@
-//Remember to save file first and then commit for it to upload properly.
-
 /*
  * Programmer: Jose Melo
  * Program: Method Practice
@@ -16,8 +14,9 @@ public class MeloMethodsPractice{
 
     public static double getMonthlyPayment (double annualInterestRate, double numberOfYears, double loanAmount){
         
+        double monthlyPayment;
         System.out.println(monthlyPayment);
-        return monthlyPayment;
+        return;
         }
 
     public static double getTotalPayment(double annualInterestRate, double numberOfYears, double loanAmount){
@@ -30,6 +29,7 @@ public class MeloMethodsPractice{
         double yearlyInterestRate;
         double years_num;
         double loan_amt;
+
         
         Scanner input = new Scanner (System.in);
 
