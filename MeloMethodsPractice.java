@@ -3,26 +3,34 @@ public class MeloMethodsPractice{
 
 
 
-    //public static double getMontlyPayment (double annualInterestRate, double numberOfYears, double loanAmount){
+    public static double getMonthlyPayment (double annualInterestRate, double numberOfYears, double loanAmount){
         
-   // }
+        System.out.println(monthlyPayment);
+        return monthlyPayment;
+        }
 
-    //public static double getTotalPayment(double annualInterestRate, double numberOfYears, double loanAmount){
-    public static String getTotalPayment(String output){
-        System.out.println(output);
+    public static double getTotalPayment(double annualInterestRate, double numberOfYears, double loanAmount){
+
         return output;
         }
 
 
-
-
-
     public static void main(String [] args){
+        double yearlyInterestRate;
+        double years_num;
+        double loan_amt;
+        
         Scanner input = new Scanner (System.in);
-        String word = input.nextLine();
 
-        getTotalPayment(word);
+        yearlyInterestRate = input.nextDouble();
+        years_num = input.nextDouble();
+        loan_amt = input.nextDouble();
 
+
+
+        getMonthlyPayment(yearlyInterestRate, years_num, loan_amt);
+        getTotalPayment(yearlyInterestRate, years_num, loan_amt);
+        
 
 
 
