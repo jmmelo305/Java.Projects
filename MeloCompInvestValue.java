@@ -39,7 +39,7 @@ public class MeloCompInvestValue{
         //Convert decimal annual interest rate into monthly interest rate
         monthlyInterestRate = interestRate / 12;
 
-        //While loop to pull the "futureInvestmentValue" method and run it for 30 years
+        //While loop to pull the "futureInvestmentValue" method and run it for 30 years - I got string format from w3schools
         while (numberOfYears <= 30){
             double result = futureInvestmentValue (investmentAmt,monthlyInterestRate,numberOfYears);
             System.out.println(numberOfYears + "               " + String.format("%.2f",result));
