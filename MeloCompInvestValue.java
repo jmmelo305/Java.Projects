@@ -10,9 +10,12 @@ import java.util.Scanner;
 public class MeloCompInvestValue{
     public static void main (String [] args){
         
+        //double futureInvestmentValue;
         double investmentAmt ;
         double interestRate;
-        int numberOfYears;
+        double monthlyInterestRate;
+        int numberOfYears = 1;
+
 
         Scanner input = new Scanner (System.in);
         System.out.println("Enter Amount Invested: ");
@@ -22,21 +25,25 @@ public class MeloCompInvestValue{
         interestRate = input.nextDouble();
         input.close();
 
+        //monthlyInterestRate = interestRate / 12;
 
-        futureInvestmentValue(investmentAmt, interestRate, numberOfYears);
-
-
-    }
-
-    public static double futureInvestmentValue(double investmentAmount, double annualInterestRate, int years){
-        double futureInvestmentValue = (investmentAmount * (1 + annualInterestRate) * years * 12);
-        System.out.println("")
-        System.out.println("The amount invested: " + investmentAmount);
-        System.out.println("Annual interest rate: " + annualInterestRate);
+        System.out.println("");
+        System.out.println("The amount invested: " + investmentAmt);
+        System.out.println("Annual interest rate: " + interestRate);
+        
         System.out.println("Years           Future Value");
-        System.out.println(years + "               " + futureInvestmentValue);
-
+        while (numberOfYears <= 30){
+            double result = futureInvestmentValue (investmentAmt,interestRate,numberOfYears);
+            System.out.println(numberOfYears + "               " + result);
+            numberOfYears ++;
+        }
+        
+        
+    }
+    public static double futureInvestmentValue(double investmentAmount, double annualInterestRate, int numberOfYears){
+        double futureInvestmentValue;        
+        futureInvestmentValue = (investmentAmount * (1 + annualInterestRate) * numberOfYears);
+           
         return futureInvestmentValue;
-
     }
 }
