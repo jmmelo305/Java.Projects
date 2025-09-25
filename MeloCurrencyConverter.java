@@ -44,7 +44,7 @@ public class MeloCurrencyConverter{
         double currencyAmount = input.nextDouble();
         input.close();
         System.out.println(" ");
-
+        
         double calculation = currencyAmount * d.get(currencyCountry);
         
         System.out.println("The currency you chose was: " + currencyCountry);
