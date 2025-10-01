@@ -1,4 +1,4 @@
-public class MeloJessProject {
+public class MeloVariableScope {
     public static void main (String [] args){
         int number = 5;
         System.out.println("Before method call: " + number);

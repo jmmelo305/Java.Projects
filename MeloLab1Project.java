@@ -44,6 +44,8 @@ public class MeloLab1Project {
 
         System.out.println("Enter Age of Customer 3: ");
         age3 = input.nextInt();
+
+        input.close();
         
 
         //Calculates ticket price based off age for customer 1

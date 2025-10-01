@@ -14,6 +14,7 @@ public class MeloPhoneKeypad {
         System.out.println("Please enter a letter to be converted into a number");
         Scanner input = new Scanner(System.in);
         String letter = input.nextLine().toUpperCase();
+        input.close();
         
         //Output what letter was inputted
         System.out.println(" ");

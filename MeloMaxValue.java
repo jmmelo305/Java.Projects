@@ -20,6 +20,7 @@ public class MeloMaxValue{
     System.out.println("Enter list of numbers");
     Scanner input = new Scanner (System.in);
     number = input.nextInt();
+    input.close();
 
     //Use a while loop that as long as the number isn't = 0 it loops through the code.
     //If the number is greated than max, then you assign max that number and reset the count.

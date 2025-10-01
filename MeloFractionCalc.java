@@ -13,6 +13,7 @@ public class MeloFractionCalc {
     //Ask for numerator and denominator inputs
       Scanner input = new Scanner (System.in);
       System.out.println("Enter a numerator and denominator");
+      input.close();
 
     //Processes inputs and calculates the fraction and the remainder
       int numerator = input.nextInt();

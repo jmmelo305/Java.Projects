@@ -22,6 +22,7 @@ public class MeloQuadraticForm {
         double a = input.nextDouble();
         double b = input.nextDouble();
         double c = input.nextDouble();
+        input.close();
         
         
         //Square root command, found on w3schools, cleaned up
