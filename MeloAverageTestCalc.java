@@ -21,6 +21,7 @@ public class MeloAverageTestCalc{
         
         System.out.println("Enter third test score");
         int grade3 = input.nextInt();
+        input.close();
         
         double math = ((grade1 + grade2 + grade3) / 3);
         System.out.println("Your average is: "+ math);

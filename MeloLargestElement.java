@@ -8,48 +8,52 @@
  */
 
 import java.util.Scanner;
+import java.util.Arrays;
 public class MeloLargestElement {
     public static void main (String [] args){
-    
+        
         int rowNum;
         int colNum;
-        int [] [] array;
+        double [] [] array;
+        int [] location;
 
         System.out.println("Enter the number of rows and columns of the array: ");
         Scanner input = new Scanner(System.in);
         rowNum = input.nextInt();
         colNum = input.nextInt();
         
+        
+        array = new double [rowNum][colNum];
+        
         System.out.println();
+
         System.out.println("Enter the array: ");
-        
-        
-        array = new int [rowNum][colNum];
         for (int i = 0; i < rowNum; i++){
             for (int j = 0; j < colNum; j++){
-                array[i][j] = input.nextInt();
+                array[i][j] = input.nextDouble();
             }
         }
+        location = locateLargest (array);
+        System.out.println("The location of the largest element is at (" + location[0] + ", " + location[1] + ")");
         
-        input.close();
         
-
-        
-       /* 
-        array = new int[rowNum][colNum];
-        for (int i = 0; i < rowNum; i++) {
-            for (int j = 0; j < colNum; j++) {
-                array[i][j] = input.nextInt();
-            }
-        }
-        */
-
-        
-    }
-/*
+        input.close();      
+    }    
+            
+            
     public static int [] locateLargest (double [] [] a){
-        int [] singleArray;
-        return singleArray;
+        int [] location = new int [2];
+        double element = a[0][0];      
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[i].length; j++) {
+                if (a[i][j] > element) {
+                    element = a[i][j];
+                    location[0] = i;
+                    location[1] = j;
+                }
+            }
+        }
+
+        return location;
     }
-        */
 }

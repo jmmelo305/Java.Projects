@@ -1,5 +1,5 @@
 public class Calculator {
-    // TODO: Create multiple versions of a 'multiply' method that can handle:
+    // TODO: Create multiple versions of a multiply method that can handle:
     // 1. Two integers
     // 2. Three integers
     // 3. Two double values
