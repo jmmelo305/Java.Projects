@@ -22,7 +22,7 @@ public class MeloOddEvenArray {
         input.close();
         
         System.out.println("Even numbers: " + Arrays.toString (getEvens(arrayNum)));
-        System.out.println("Odd numbers: " + getOdds(arrayNum));
+        System.out.println("Odd numbers: " + Arrays.toString (getOdds(arrayNum)));
     }
 
 
@@ -32,8 +32,11 @@ public class MeloOddEvenArray {
         int arrayCount = 0;
         
         for (int i = 0; i < arrayLength; i = i + 1){
-            evenNums [arrayCount] = nums [i];
-            arrayCount ++;
+            if (nums[i] % 2 == 0){
+                evenNums [arrayCount] = nums [i];
+                arrayCount ++;
+            }
+            
         }
         return evenNums ;
 
@@ -44,8 +47,11 @@ public class MeloOddEvenArray {
         int arrayCount = 0;
         
         for (int i = 0; i < arrayLength; i = i + 2){
-                oddsNums [arrayCount] = nums [i];
+                
+            if (nums[i] % 2 != 0){
+            oddsNums [arrayCount] = nums [i];
                 arrayCount ++;
+            }
         }
         return oddsNums ;
     }
