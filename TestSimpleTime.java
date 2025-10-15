@@ -10,9 +10,9 @@
 
 // SimpleTime class with public fields
 class SimpleTime {
-    public int hour;
-    public int minute;
-    public int second;
+    public int hour = 0;
+    public int minute = 0;
+    public int second = 0;
 }
 
 // Test class with main method
