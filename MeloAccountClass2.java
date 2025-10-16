@@ -68,14 +68,26 @@ class Account {
     this.dateCreated = new Date();
   }
 
-  public int getId() { return id; }
-  public void setId(int id) { this.id = id; }
+  public int getId() { 
+    return id; 
+  }
+  public void setId(int id) { 
+    this.id = id; 
+  }
 
-  public double getBalance() { return balance; }
-  public void setBalance(double balance) { this.balance = balance; }
+  public double getBalance() {
+     return balance;
+  }
+  public void setBalance(double balance) {
+     this.balance = balance; 
+  }
 
-  public static double getAnnualInterestRate() { return annualInterestRate; }
-  public static void setAnnualInterestRate(double rate) { annualInterestRate = rate; }
+  public static double getAnnualInterestRate() {
+     return annualInterestRate; 
+    }
+  public static void setAnnualInterestRate(double rate) {
+     annualInterestRate = rate; 
+    }
 
   // returns the monthly interest amount (balance * monthly rate)
   public double getMonthlyInterest() {
