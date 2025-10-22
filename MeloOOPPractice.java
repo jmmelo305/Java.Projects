@@ -1,6 +1,6 @@
 /*
  * Programmer: Jose Melo
- * Purpose: 
+ * Purpose: Find the maximum combinations that can be made with 2 numbers
  * Program: OOP Practice 
  * Date: 10-21-2025
  */
