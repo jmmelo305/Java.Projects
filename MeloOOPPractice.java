@@ -5,9 +5,15 @@
  * Date: 10-21-2025
  */
 
+
+//Import Scanner (import to be able to input numbers into code)
+//and math.BigInteger (import to be able to use BigInteger variable type)
 import java.math.BigInteger;
 import java.util.Scanner;
+
+//Main Class
 public class MeloOOPPractice {
+    //Main method - tester, asks for inputs and pulls methods to run
     public static void main (String [] args){
 
         int n;
@@ -25,7 +31,10 @@ public class MeloOOPPractice {
         System.out.println("The C " + "(" + n + "," + k + ") is " + getNumberOfCombinations(n, k));
 
     }
- 
+    //Create getNumberOfCombinations Method that runs and determines 
+    //the maximum number of combinations using the 
+    //arguments provided
+
     public static BigInteger getNumberOfCombinations (int n, int k){
         if (k > n) {
             return BigInteger.ZERO;
@@ -46,35 +55,6 @@ public class MeloOOPPractice {
         }
 
         return numerator.divide(denominator);
-
-
-
-/*
-        String stringOfN;
-        String stringOfK;
-        BigInteger bigIntN;
-        BigInteger bigIntK; 
-
-
-        stringOfN = String.valueOf(n);
-        stringOfK = String.valueOf(k);
-
-        bigIntN = new BigInteger (stringOfN);
-        bigIntK = new BigInteger (stringOfK);
-
-        /*BigInteger result = BigInteger.ONE;
-        for (int i = 2; i <= n; i++){
-            result = result.multiply(BigInteger.valueOf(i));
-        }
-        
-
-        int result = (n / (k * (n-k)));
-        String stringOfR;
-        stringOfR = String.valueOf(result);
-        BigInteger bigIntR;
-        bigIntR = new BigInteger (stringOfR);
-
-*/ 
     }
     
 }
